@@ -29,7 +29,6 @@ a:link, a:visited, a:hover, a:active  {
   max-width: 101.25rem; /* 1620 px*/
   min-height: 100vh;
   margin: 0 auto;
-  border: 1px solid blue;
   justify-content: space-between;
 }
 
@@ -166,23 +165,23 @@ a:link, a:visited, a:hover, a:active  {
   display: flex;
   height: 2.8125rem;
   padding-top: 0.5rem;
-  border: 1px solid #000000;
+  /* border: 1px solid #000000; */
 }
 
 .main__item-count {
   height: 9.375rem;
   padding-top: 2rem;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 .main__cards {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
-.main__cards div{
+.main__cards-card{
   flex: 0 1 19.0625rem;
   /* width: 19.0625rem; */
   height: 27vh;
@@ -202,7 +201,7 @@ a:link, a:visited, a:hover, a:active  {
   margin-top: 1.4375rem;
   margin-bottom: 1.4375rem;
   background-color: #fff;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   border-radius: 0.625rem;
 }
 
@@ -210,10 +209,12 @@ a:link, a:visited, a:hover, a:active  {
   flex: 1 1 60%;
   height: 38.125rem;
   border: 1px solid black;
+  border-radius: 0.625rem;
 }
 
 .side__invite {
   flex: 1 1 40%;
   height: 23.75rem;
   border: 1px solid black;
+  border-radius: 0.625rem;
 }
