@@ -39,6 +39,7 @@ a:link, a:visited, a:hover, a:active  {
   background-color: var(--bg-color);
   /* padding-left: 2.875rem; */
   border-right: 1px dotted #000000;
+  border-left: 1px dotted #000000;
 }
 
 .nav > h4 {
@@ -200,7 +201,6 @@ a:link, a:visited, a:hover, a:active  {
   margin-left: 1.4375rem;
   margin-top: 1.4375rem;
   margin-bottom: 1.4375rem;
-  background-color: #fff;
   /* border: 1px solid black; */
   border-radius: 0.625rem;
 }
@@ -208,13 +208,14 @@ a:link, a:visited, a:hover, a:active  {
 .side__profile {
   flex: 1 1 60%;
   height: 38.125rem;
+  background-color: #fff;
   border: 1px solid black;
   border-radius: 0.625rem;
 }
 
 .side__invite {
   flex: 1 1 40%;
-  height: 23.75rem;
+  background-color: #fff;
   border: 1px solid black;
   border-radius: 0.625rem;
 }
