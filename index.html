@@ -10,29 +10,34 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Alata&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
     rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="style.css" type="text/css">
   <meta name="description" content="A dashboard website for places near you">
   <title>GEODASH</title>
 </head>
 
 <body>
+  <a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fnext.js%2Ftree%2Fcanary%2Fexamples%2Fhello-world">
+    <img src="https://vercel.com/button" alt="Deploy with Vercel">
+  </a>
   <div class="container">
     <nav class="nav">
       <h4>Map Suite</h4>
 
-      <div class="nav__btn-socmed"><!-- -----------------------------------SOCIAL MEDIATORS BUTTON -->
-          <h4>Social Mediators</h4>
-          <p>Sandro Tavares</p>
-          <a href="#">
-            <span class="material-icons-outlined">
-              logout
-            </span>
-          </a>
+      <div class="nav__btn-socmed">
+        <!-- -----------------------------------SOCIAL MEDIATORS BUTTON -->
+        <h4>Social Mediators</h4>
+        <p>Sandro Tavares</p>
+        <a href="#">
+          <span class="material-icons-outlined">
+            logout
+          </span>
+        </a>
       </div>
 
-      <a href="#" class="nav__btn-dashboard"><!-- ------------------------------DASHBOARD AND MAPS BUTTONS -->
+      <a href="#" class="nav__btn-dashboard">
+        <!-- ------------------------------DASHBOARD AND MAPS BUTTONS -->
         <span class="material-icons-outlined">
           dashboard
         </span>
@@ -46,7 +51,8 @@
         <p>Maps,Pins & Routes</p>
       </a>
 
-      <div class="nav__btn-folders"><!-- -----------------------------------PRIVATE FOLDERS -->
+      <div class="nav__btn-folders">
+        <!-- -----------------------------------PRIVATE FOLDERS -->
         <p>Private Folders</p>
         <a href="#">
           <span class="material-icons-outlined">
@@ -68,7 +74,8 @@
         </a>
       </div>
 
-      <div class="nav__btn-folders"><!-- -----------------------------WORKPLACE FOLDERS -->
+      <div class="nav__btn-folders">
+        <!-- -----------------------------WORKPLACE FOLDERS -->
         <p>Workplace Folders</p>
         <a href="#" class="nav__btn7">
           <span class="material-icons-outlined">
@@ -84,58 +91,95 @@
         </a>
       </div>
     </nav>
-
-    <main class="main"> <!-- ------------------------------------MAIN MIDDLE SECTION-->
-      <div class="main__tab">
-        <span class="material-icons-outlined">dashboard</span>
-        <p>Social Media Management</p>
-        <span class="material-icons-outlined">close</span>
-      </div>
-      <div class="main__item-count">
-        <h1>8 Items</h1>
-        <p>7 Maps, 1 Pin</p>
-      </div>
-      <div class="main__cards">
-        <div class="main__cards-card"></div>
-        <div class="main__cards-card"></div>
-        <div class="main__cards-card"></div>
-        <div class="main__cards-card"></div>
-      </div>
-    </main>
-    
-    <aside class="side"> <!-- ------------------------------------SIDE RIGHT SECTION-->
-      <div class="side-profile">
-        <div class="side-profile__tab">
-          <p>Pin Profile</p>
+    <div class="flex-container">
+      <main class="main"><!-- ------------------------------------MAIN MIDDLE SECTION-->
+        <div class="main__tab">
+          <span class="material-icons-outlined">dashboard</span>
+          <p>Social Media Management</p>
           <span class="material-icons-outlined">close</span>
         </div>
-
-        <div class="side-profile__head">
-          <h2>Sunbathing at Yakin's</h2>
-          <a href="#">
-            <span class="material-icons-outlined">liquor</span>Drinks
-          </a>
+        <div class="main__item-count">
+          <h1>8 Items</h1>
+          <p>7 Maps, 1 Pin</p>
         </div>
 
-        <div class="side-profile__head-start">
-          <p>Starts at 5:30PM;</p>
-          <p>Finishes at 7:00PM</p>
-        </div>
+        <ul class="main__cards"><!-- ----------------MAIN CARDS -->
+          <li class="main__cards-card">
+            <div class="card-map"><!-- ----------------GOOGLE MAP IN CARD -->
+              
+                  <div class="mapouter">
+                    <iframe width="280" height="120" id="gmap_canvas"
+                      src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                    </iframe>
+                  </div>
+                
+                <div class="card-map__views">
+                  <a href="#"><span>3,4k Views</span></a>
+                  <a href=""><span class="material-icons-outlined">public</span></a>
+                </div>
+            </div>
+            <div class="card-title">
+              <div>
+                <p>Sunbathing at Yakin's</p>
+                <p>I love travelling</p>
+                <p>Updated Jul 1, 2021</p>
+              </div>
+              <div>
+                <a href="#">MAPS</a>
+                <span class="material-icons-outlined">settings</span>
+              </div>
+            </div>
+            
+          </li>
 
-        <div class="side-profile__media">
-          <div class="media-1">Video card1</div>
-          <div class="media-2">Vivdeo card 2</div>
-        </div>
+          <li class="main__cards-card"></li>
 
-        <div class="side-profile__text">
-          <p>Description</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolorem molestiae, rerum nulla quibusdam quaerat? Eveniet, necessitatibus maiores eum ipsam similique, enim reprehenderit nisi ipsum magni inventore ad. Corporis itaque accusantium suscipit eos ratione! </p>
+          <li class="main__cards-card"></li>
+
+          <li class="main__cards-card"></li>
+        </ul>
+      </main>
+
+      <aside class="side">
+        <!-- ------------------------------------SIDE SECTION-->
+        <div class="side-profile">
+          <div class="side-profile__tab">
+            <p>Pin Profile</p>
+            <span class="material-icons-outlined">close</span>
+          </div>
+          <div class="side-profile__head">
+            <h2>Sunbathing at Yakin's</h2>
+            <a href="#">
+              <span class="material-icons-outlined">liquor</span>Drinks
+            </a>
+          </div>
+          <div class="side-profile__head-start">
+            <p>Starts at 5:30PM;</p>
+            <p>Finishes at 7:00PM</p>
+          </div>
+          <div class="side-profile__media">
+            <div class="media-1">Video card1</div>
+            <div class="media-2">Video card 2</div>
+          </div>
+          <div class="side-profile__text">
+            <p>Description</p>
+            <p></p>
+          </div>
         </div>
-        
-      </div>
-      <div class="side-invite">
-      </div>
-    </aside>
+        <div class="side-invite">
+          <div class="side-invite__tab">
+            <p>203 People Invited</p>
+            <a href="#">See all</a>
+          </div>
+          <div class="side-invite__avatars">
+            <a href="#">
+              <img src="" alt="">
+              <p>yaliza20</p>
+            </a>
+          </div>
+        </div>
+      </aside>
+    </div>
   </div>
   <script src="app.js"></script>
 </body>
